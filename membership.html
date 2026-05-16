@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silver Strength — Membership</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">SILVER <span>STRENGTH</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="membership.html" class="active">Membership</a></li>
+      <li><a href="creativity.html">Experience</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-hero">
+      <p class="section-label">Registration</p>
+      <h1>JOIN SILVER<br><em>STRENGTH</em></h1>
+    </div>
+
+    <div class="form-section">
+      <div class="form-layout">
+        <div>
+          <div class="success-banner" id="successBanner">
+            Your registration was submitted. Welcome to Silver Strength — we'll be in touch shortly.
+          </div>
+
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="e.g. Alex Johnson">
+            <span class="error-msg" id="fullNameError">Please enter your full name.</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="text" id="email" placeholder="you@example.com">
+              <span class="error-msg" id="emailError">Enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" placeholder="(212) 555-0100">
+              <span class="error-msg" id="phoneError">Enter a valid US phone number.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="text" id="age" placeholder="e.g. 28">
+              <span class="error-msg" id="ageError">Age must be between 16 and 99.</span>
+            </div>
+            <div class="form-group">
+              <label for="membershipType">Membership Type</label>
+              <select id="membershipType">
+                <option value="">Select a plan</option>
+                <option value="basic">Basic — $49/mo</option>
+                <option value="standard">Standard — $79/mo</option>
+                <option value="elite">Elite — $119/mo</option>
+                <option value="student">Student — $35/mo</option>
+              </select>
+              <span class="error-msg" id="membershipTypeError">Please select a membership plan.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="startDate">Preferred Start Date</label>
+              <input type="text" id="startDate" placeholder="MM/DD/YYYY">
+              <span class="error-msg" id="startDateError">Enter a valid date (MM/DD/YYYY).</span>
+            </div>
+            <div class="form-group">
+              <label for="emergencyContact">Emergency Contact Name</label>
+              <input type="text" id="emergencyContact" placeholder="e.g. Sarah Johnson">
+              <span class="error-msg" id="emergencyContactError">Please provide an emergency contact.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fitnessGoals">Fitness Goals</label>
+            <textarea id="fitnessGoals" placeholder="Tell us what you're working toward..."></textarea>
+            <span class="error-msg" id="fitnessGoalsError">Please describe your fitness goals.</span>
+          </div>
+
+          <button class="btn" onclick="validateForm()">Submit Registration</button>
+        </div>
+
+        <div class="form-sidebar">
+          <div class="sidebar-box">
+            <h3>Membership Plans</h3>
+            <ul>
+              <li>Basic <span class="price">$49/mo</span></li>
+              <li>Standard <span class="price">$79/mo</span></li>
+              <li>Elite <span class="price">$119/mo</span></li>
+              <li>Student <span class="price">$35/mo</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-box">
+            <h3>What's Included</h3>
+            <ul>
+              <li>Full gym floor access</li>
+              <li>Group class schedule</li>
+              <li>Locker rooms & showers</li>
+              <li>Recovery zone (Standard+)</li>
+              <li>Personal coaching (Elite)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">SILVER <span>STRENGTH</span></div>
+    <p>&copy; 2026 Silver Strength. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>

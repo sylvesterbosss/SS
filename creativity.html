@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silver Strength — Experience</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">SILVER <span>STRENGTH</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="creativity.html" class="active">Experience</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-hero">
+      <p class="section-label">Interactive</p>
+      <h1>YOUR<br><em>EXPERIENCE</em></h1>
+    </div>
+
+    <div class="creativity-section">
+      <p class="feature-title">Workout of the Day</p>
+      <p class="feature-desc">A new workout generated each time. Hit the button to load your session.</p>
+
+      <div class="wod-box" id="wodBox">
+        <p class="wod-day" id="wodDay">Today's WOD</p>
+        <p class="wod-name" id="wodName">Load Your Workout</p>
+        <ul class="wod-exercises" id="wodList">
+          <li><span class="ex-num">—</span>Press the button below to generate today's session.</li>
+        </ul>
+        <div class="wod-tip" id="wodTip">Your coaching tip will appear here.</div>
+        <button class="btn" onclick="generateWOD()">Generate WOD</button>
+      </div>
+    </div>
+
+    <div class="creativity-section">
+      <p class="feature-title">Summer Shred Countdown</p>
+      <p class="feature-desc">Our 12-week summer transformation challenge kicks off soon. Don't miss the early enrollment window.</p>
+
+      <div class="event-label">Event: <strong id="eventName">Summer Shred Challenge — July 1, 2026</strong></div>
+
+      <div class="countdown-grid">
+        <div class="countdown-unit">
+          <div class="cd-num" id="cdDays">--</div>
+          <div class="cd-label">Days</div>
+        </div>
+        <div class="countdown-unit">
+          <div class="cd-num" id="cdHours">--</div>
+          <div class="cd-label">Hours</div>
+        </div>
+        <div class="countdown-unit">
+          <div class="cd-num" id="cdMins">--</div>
+          <div class="cd-label">Minutes</div>
+        </div>
+        <div class="countdown-unit">
+          <div class="cd-num" id="cdSecs">--</div>
+          <div class="cd-label">Seconds</div>
+        </div>
+      </div>
+
+      <a href="membership.html" class="btn" style="margin-top: 20px; display: inline-block;">Secure Your Spot</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">SILVER <span>STRENGTH</span></div>
+    <p>&copy; 2026 Silver Strength. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
